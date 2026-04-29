@@ -46,10 +46,11 @@ export default function Home() {
           </div>
           <div className="flex items-center">
             <Image
-              src="/QR-Code-generator-with-logo/select-logo.png"
+              src="/select-logo.png"
               alt="Select logo"
               width={220}
               height={60}
+              unoptimized
               priority
               className="h-auto w-[150px] brightness-0 invert sm:w-[180px] md:w-[220px]"
             />
