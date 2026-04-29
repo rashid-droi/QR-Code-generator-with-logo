@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { ControlsPanel } from "@/components/controls-panel";
 import { DownloadButtons } from "@/components/download-buttons";
 import { QRPreview } from "@/components/qr-preview";
@@ -45,13 +44,11 @@ export default function Home() {
             Professional QR Studio
           </div>
           <div className="flex items-center">
-            <Image
-              src="/select-logo.png"
+            <img
+              src="select-logo.png"
               alt="Select logo"
               width={220}
               height={60}
-              unoptimized
-              priority
               className="h-auto w-[150px] brightness-0 invert sm:w-[180px] md:w-[220px]"
             />
           </div>
