@@ -71,7 +71,7 @@ async function drawCenterEmblem(canvas: HTMLCanvasElement) {
   }
 
   const emblem = new Image();
-  emblem.src = "/center-emblem.jpg";
+  emblem.src = "center-emblem.jpg";
 
   await new Promise<void>((resolve, reject) => {
     emblem.onload = () => resolve();
