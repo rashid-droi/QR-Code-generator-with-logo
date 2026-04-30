@@ -74,7 +74,7 @@ export function ControlsPanel({
               className="mt-0.5 h-4 w-4 cursor-pointer accent-[#de5b27]"
             />
             <Label htmlFor="remove-emblem" className="cursor-pointer">
-              Remove SELECT logo
+              Remove center emblem
             </Label>
           </div>
           <DownloadButtons canvasRef={canvasRef} disabled={downloadDisabled} />

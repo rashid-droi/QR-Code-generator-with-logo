@@ -43,7 +43,7 @@ export default function Home() {
             alt="Select company logo"
             width={280}
             height={70}
-            className="h-auto w-[170px] drop-shadow-[0_2px_10px_rgba(255,255,255,0.35)] sm:w-[220px] md:w-[260px] lg:w-[300px]"
+            className="h-auto w-[170px] rounded-md bg-[#012f56]/35 p-2 drop-shadow-[0_2px_10px_rgba(255,255,255,0.35)] sm:w-[220px] md:w-[260px] lg:w-[300px]"
             style={{ filter: "brightness(0) invert(1)" }}
           />
         </header>

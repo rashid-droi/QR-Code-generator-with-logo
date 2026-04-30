@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // Use project subpath only for GitHub Pages builds.
+  // Use repository base path only for GitHub Pages CI builds.
   basePath: isGitHubPagesBuild ? "/QR-Code-generator-with-logo" : "",
   trailingSlash: isGitHubPagesBuild,
 };
