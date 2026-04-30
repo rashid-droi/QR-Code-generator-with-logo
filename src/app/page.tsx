@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { motion } from "framer-motion";
 import { ControlsPanel } from "@/components/controls-panel";
 import { QRPreview } from "@/components/qr-preview";
 
@@ -39,12 +38,7 @@ export default function Home() {
     <main className="theme-bg min-h-screen px-3 py-3 sm:px-4 sm:py-5 md:px-6 md:py-7 xl:px-10">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 sm:gap-5 md:gap-6">
         <div className="grid items-start gap-4 lg:grid-cols-2 lg:gap-6">
-          <motion.section
-            initial={{ opacity: 0, x: 10 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: 0.1 }}
-            className="order-2 w-full self-stretch lg:order-1"
-          >
+          <section className="order-2 w-full self-stretch lg:order-1">
             <QRPreview
               canvasRef={canvasRef}
               value={urlError ? "" : url}
@@ -53,14 +47,9 @@ export default function Home() {
               isLoading={isGenerating}
               onLoadingChange={setIsGenerating}
             />
-          </motion.section>
+          </section>
 
-          <motion.section
-            initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4 }}
-            className="order-1 w-full space-y-3 self-stretch sm:space-y-4 lg:order-2 lg:sticky lg:top-4"
-          >
+          <section className="order-1 w-full space-y-3 self-stretch sm:space-y-4 lg:order-2 lg:sticky lg:top-4">
             <ControlsPanel
               canvasRef={canvasRef}
               downloadDisabled={Boolean(urlError || isGenerating)}
@@ -72,7 +61,7 @@ export default function Home() {
               onColorChange={setColor}
               onRemoveEmblemChange={setRemoveEmblem}
             />
-          </motion.section>
+          </section>
         </div>
       </div>
     </main>
