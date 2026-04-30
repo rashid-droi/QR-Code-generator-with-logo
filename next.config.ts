@@ -5,8 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/QR-Code-generator-with-logo",
-  trailingSlash: true,
+  // Local-first setup: serve app from root path to avoid basePath-related 404s.
+  basePath: "",
+  trailingSlash: false,
 };
 
 export default nextConfig;
