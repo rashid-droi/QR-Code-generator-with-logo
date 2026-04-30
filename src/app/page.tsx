@@ -37,14 +37,13 @@ export default function Home() {
   return (
     <main className="theme-bg min-h-screen px-3 py-3 sm:px-4 sm:py-5 md:px-6 md:py-7 xl:px-10">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 sm:gap-5 md:gap-6">
-        <header className="rounded-2xl border border-sky-200/70 bg-white/75 p-3 shadow-xl backdrop-blur-md dark:border-white/35 dark:bg-white/15 sm:p-4">
+        <header className="p-1 sm:p-2">
           <img
-            src="select-logo-white.png?v=2"
+            src="select-logo-clean.png?v=1"
             alt="Select company logo"
             width={280}
             height={70}
-            className="h-auto w-[170px] rounded-md bg-[#012f56]/35 p-2 drop-shadow-[0_2px_10px_rgba(255,255,255,0.35)] sm:w-[220px] md:w-[260px] lg:w-[300px]"
-            style={{ filter: "brightness(0) invert(1)" }}
+            className="h-auto w-[170px] drop-shadow-[0_2px_10px_rgba(255,255,255,0.35)] sm:w-[220px] md:w-[260px] lg:w-[300px]"
           />
         </header>
         <div className="grid items-start gap-4 lg:grid-cols-2 lg:gap-6">
